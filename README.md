@@ -11,7 +11,7 @@ Other related repos: [granite-code-ngrams](https://github.com/fohrloop/granite-c
 
 # Most common ngrams
 
-Most common trigrams using the `ngram_show` tool from [granite-tools](https://github.com/fohrloop/granite-tools), case ignored (unit: percents)
+Most common ngrams using the `ngram_show` tool from [granite-tools](https://github.com/fohrloop/granite-tools), case ignored (unit: percents)
 <details>
 <summary>Most common unigrams (Granite English)</summary>
 
