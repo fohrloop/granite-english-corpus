@@ -1,4 +1,4 @@
-# Granite English Corpus
+# Granite English Ngrams
 
 This repository contains the character-based ngrams (unigrams, bigrams, trigrams) used for the development of the [Granite Layout](https://github.com/fohrloop/granite-layout) which are compatible with the [Keyboard Layout Optimizer](https://github.com/dariogoetz/keyboard_layout_optimizer) by Dario Götz. The corpus was cleaned from untypical characters before creating the ngrams (see below for details).
 
