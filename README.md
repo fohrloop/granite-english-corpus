@@ -360,7 +360,9 @@ This compares `leipzig` to `tldr17` dataset.
 
 ## granite-english vs colemak-iweb
 
-Download link: [iweb-corpus-samples-cleaned.txt.xz](https://colemak.com/pub/corpus/iweb-corpus-samples-cleaned.txt.xz). This is the same as the `ngrams/shai_english` in the Keyboard Layout Optimizer[^shai], named after Shai Coleman, the creator of Colemak layout. It is unclear if the corpus has been superceded by larger corpora later, as the current version of [Colemak Design](https://colemak.com/Design) page refers to [English Letter Frequency Counts: Mayzner Revisited or ETAOIN SRHLDCU](https://norvig.com/mayzner.html)
+Download link: [iweb-corpus-samples-cleaned.txt.xz](https://colemak.com/pub/corpus/iweb-corpus-samples-cleaned.txt.xz).
+
+This is also known as "Shai's corpus". This is the same as the `ngrams/shai_english` in the Keyboard Layout Optimizer[^shai], named after Shai Coleman, the creator of Colemak layout[^coleman]. This is also almost the same as the [shai.json](https://raw.githubusercontent.com/o-x-e-y/oxeylyzer/main/static/language_data/shai.json) in the [oxeylyzer](https://github.com/o-x-e-y/oxeylyzer) repo[^shai-oxey].
 
 There is a claim that P is slightly more common than G in English (See e.g. [comment here](https://forum.colemak.com/topic/362-dear-shai-g-is-more-frequent-than-p/#p2357) and [Colemak FAQ](https://colemak.com/Design_FAQ)). However, the Granite English dataset does not seem to agree with it. The reason is that while the Leipzig dataset has more common P than G (1.75% vs 1.64%), more weight is given to the Reddit 2017 dataset, which has the opposite (P: 1.45%, G: 1.83%).
 
@@ -1252,3 +1254,5 @@ if __name__ == "__main__":
 [^tldr17]: Syed, S., Voelske, M., Potthast, M., & Stein, B. (2017). Webis-TLDR-17 Corpus [Data set]. EMNLP 2017 Workshop on New Frontiers in Summarization (EMNLP 2017). Zenodo. https://doi.org/10.5281/zenodo.1043504
 [^shai]: See: [dariogoetz/keyboard_layout_optimizer/discussions/78](https://github.com/dariogoetz/keyboard_layout_optimizer/discussions/78#discussioncomment-10866520)
 [^douglas-kla]: Douglas, Ian. “Keyboard Layout Analysis: Creating the Corpus, Bigram Chains, and Shakespeare's Monkeys”. Zenodo, March 29, 2021. https://doi.org/10.5281/zenodo.5501838.
+[^coleman]: It is unclear if the corpus has been superceded by larger corpora later, as the current version of [Colemak Design](https://colemak.com/Design) page refers to [English Letter Frequency Counts: Mayzner Revisited or ETAOIN SRHLDCU](https://norvig.com/mayzner.html)
+[^shai-oxey]:  Compared against version specified by commit `867316e48a79f1b9382ea7ce5887a569dadf0823`. The difference is that the shai.json does not contain ngrams with whitespaces, uppercase letters or numbers, for example.
